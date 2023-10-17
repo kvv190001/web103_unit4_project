@@ -10,3 +10,115 @@
     overflow-x: hidden;
     padding-bottom: 50px;
 }
+.roofcontainer{
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    align-items: center;
+    color: white;
+    height: 200px;
+    /* background-color: blue; */
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold;
+    height: 0;
+    /* margin-bottom: 10px;    */
+    visibility: hidden;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: red;
+  opacity: 40%;
+
+}
+
+.card-header {
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-content {
+  font-size: 1rem;
+}
+
+/* .noBorder {
+  text-align: center;
+  color: #000;
+  border: solid 2px transparent;
+  padding: 12px 12px 12px 12px; 
+  margin: 0px 0px 10px 0;
+} */
+.selected{
+  text-align: center;
+  color: #000;
+  border: solid 8px white;
+  background-color: red; 
+  padding: 12px 12px 12px 12px;
+  margin: 0px 0px 10px 0;
+}
+.exteriorcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  height: 0;
+  /* margin-bottom: 10px;    */
+  visibility: hidden;
+}
+.mystyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; 
+    visibility: visible;
+    height: 100px;
+  }
+/* relevant styles */
+.img__wrap {
+    position: relative;
+    height: 100px;
+    width: 157px;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    margin: 10px;
+  }
+  
+  .img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap:hover .img__description{
+    visibility: visible;
+    opacity: 1;
+  }
+
+/* #img{
+
+  width:"200px";
+  height:"300px"
+} */
